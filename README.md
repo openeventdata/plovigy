@@ -29,7 +29,9 @@ At present, key commands except for the default `return` must be followed by `re
 
 2. Input is not case-sensitive 
 
-3. The file FILEREC_NAME -- currently set to "plodigy.filerecs.txt" -- keeps track of the location in the file, so if you quit and restart, you will be returned to the last uncoded record in the file. 
+3. The file FILEREC_NAME -- currently set to "plodigy.filerecs.txt" -- keeps track of the location in the file, so if you quit and restart, you will be returned to the last uncoded record in the file.
+
+4. The file *plover_reference.html* is a reference to the PLOVER ontology and has some suggestions for doing annotation; it can be opened in a browser.
 
 ## What's the point?
 
