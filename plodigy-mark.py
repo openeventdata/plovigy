@@ -81,10 +81,7 @@ else:
 if len(sys.argv) >= 3:
     coder = sys.argv[2]
 else:  
-    coder = "PAS"
-
-"""if filename == "": filename = raw_input("Enter input file name->")
-if initials == "": initials = raw_input("Enter initials->")"""
+    coder = "PLD"
     
 timestamp =  coder  + '-' + datetime.datetime.now().strftime("%Y%m%d")[2:] + "-" + datetime.datetime.now().strftime("%H%M%S") + ".txt"
 
@@ -189,7 +186,7 @@ else:  # reached EOF
 
 fin.close()
 fout.close()
-with open("plovy.filerecs.txt",'a') as frec:
+with open(FILEREC_NAME,'a') as frec:
     frec.write("{:s} {:d} {:s} {:d}\n".format(filename,nskip, timestamp, nacc + nrej + nign)) 
 
 print("Finished")
