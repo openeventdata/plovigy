@@ -15,7 +15,7 @@ where  `<filename>` is the file to annotate; `<coder>` is typically the coder in
 python3 plovigy-mark.py verify_test0105_02.jsonl PAS
 ```
 
-Output file will have a name of the format `plodigy-eval.PAS-180105-171558.txt`
+Output file will have a name of the format `plovigy-eval.PAS-180105-171558.txt`
 
 ## Key commands
 
@@ -41,11 +41,11 @@ At present, key commands except for the default `return` must be followed by `re
 
 4. The file *plover_reference.html* is a reference to the PLOVER ontology and has some suggestions for doing annotation; it can be opened in a browser.
 
-5. *plovigy_testfile_0105.jsonl* is set up for annotating the primary PLOVER event but, with different data prep, this could be -- and in the future will be -- changed for annotation of the source or target actors, or the mode or context of the event. We have a set of programs which extract the most frequently-used patterns for the PETRARCH-1 and PETRARCH-2 programs (see [this presentation](http://eventdata.parusanalytics.com/presentations.dir/Schrodt.RIDIR.PETRARCH.slides.pdf) and then convert these to the prodigy/plovigy format, but at the moment these are fairly ad hoc: still, if you might find them useful, contact schrodt735@gmail.com. 
+5. *plovigy_testfile_0105.jsonl* is set up for annotating the primary PLOVER event but, with different data preparation, this could be -- and in the future will be -- changed so that the program can be used for the annotation of the source or target actors, or the PLOVER mode or context of the event. We have a set of programs which extract the most frequently-used patterns for the PETRARCH-1 and PETRARCH-2 programs (see [this presentation](http://eventdata.parusanalytics.com/presentations.dir/Schrodt.RIDIR.PETRARCH.slides.pdf)) and then convert these to the `prodigy/plovigy` format, but at the moment these are fairly ad hoc: still, if you might find them useful, contact schrodt735@gmail.com. 
 
 ## What's the point?
 
-This program was developed to do simple annotation on the records coded into the [PLOVER](https://github.com/openeventdata/PLOVER) system (hence the name) by several different automated event data coding programs, simply presenting the text and the assigned category without any additional markup. While `prodigy` is way cool, it involves considerable overhead, and we are looking for something that could run, say, on a cheap little Ubuntu burner laptop on, say, a trans-Atlantic flight. As it happens, the simplicity of the interface also means that one can classify cases very quickly.
+This program was developed to do simple annotation -- that is, simply determining whether a coding was correct, incorrect, or the text should not have been coded -- on the records coded into the [PLOVER](https://github.com/openeventdata/PLOVER) system (hence the name) by several different automated event data coding programs, simply presenting the text and the assigned category without any additional markup. While `prodigy` is way cool, it involves considerable overhead, and we are looking for something that could run, say, on a cheap little Ubuntu burner laptop on, say, a trans-Atlantic flight. As it happens, the simplicity of the interface also means that one can classify cases very quickly.
 
 ## Programming Notes
 
@@ -53,7 +53,7 @@ This program was developed to do simple annotation on the records coded into the
 
 2. Unlike `prodigy`, the program currently does not have the ability to go backwards: saving the results to a buffer rather than immediately writing them to a file would also be a very straightforward feature to add. 
 
-3. I'm guessing in the appropriate Python framework, it would be easy to get this running on phone: again, it's really lightweight. This is left as an exercise.
+3. I'm guessing in the appropriate Python framework, it would be easy to get this running on a smart phone: again, it's really lightweight. This is left as an exercise.
 
 
 ## Acknowledgments
