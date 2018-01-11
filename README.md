@@ -25,15 +25,15 @@ Output file will have a name of the format `plovigy-eval.PAS-180105-171558.txt`
 1 | a | accept
 2 |x | reject
 3 |z | toggles the display of the "meta" information
-4 |d | toggle <return> between accept/reject (default is "accept")
-` ` |return | accept or reject depending on setting 
+4 |d | toggle <return> between accept/reject/ignore (default is "accept")
+` ` |return | accept, reject, or ignore depending on setting 
 ` ` |q | quit 
 
 At present, key commands except for the default `return` must be followed by `return`.
 
 ## Some usage notes
 
-1. Toggling the `return` option substantially increases the speed at which one can annotate in situations where one hits a sequence of cases which are either usually right or usually wrong.
+1. Toggling the `return` option substantially increases the speed at which one can annotate in situations where one hits a sequence of cases which are either usually right, usually wrong or usually irrelevant.
 
 2. Input is not case-sensitive 
 
