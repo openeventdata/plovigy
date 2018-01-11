@@ -24,7 +24,7 @@ KEYS
 
 3/z        toggles the display of the "meta" information
 
-4/d        toggle <return> between accept/reject
+4/d        cycles <return> between accept/reject/ignore
 
 q          quit 
 
@@ -81,7 +81,7 @@ else:
 if len(sys.argv) >= 3:
     coder = sys.argv[2]
 else:  
-    coder = "PLD"
+    coder = "PLV"
     
 timestamp =  coder  + '-' + datetime.datetime.now().strftime("%Y%m%d")[2:] + "-" + datetime.datetime.now().strftime("%H%M%S") + ".txt"
 
@@ -127,8 +127,10 @@ while len(line) > 0:
 
     if defaultopt == "A":
         print("a/1/DEFAULT: accept  x/2: reject  space/0: ignore   z/3: toggle meta  d/4: toggle default  q: quit\n")
+    elif defaultopt == "X":
+        print("a/1: accept  x/2/DEFAULT: reject  space/0: ignore   z/3: toggle meta  d/4: toggle default  q: quit\n")
     else:
-        print("a/1: accept  x/2/DEFAULT: reject  space/0: ignore   z/3: toggle meta  d/4: toggle default   q: quit\n")
+        print("a/1: accept  x/2: reject  space/0/DEFAULT: ignore   z/3: toggle meta  d/4: toggle default  q: quit\n")
     for ln in textwrap.wrap(record['text'],80):
         print(ln) 
     print("\n\x1B[34m{:20s}\x1B[00m".format(record["label"]),end="")
@@ -142,14 +144,7 @@ while len(line) > 0:
             print("\nclass: " + record["meta"]["class"])
     
     print()
-    if "held " in record['text'] and "talks " in record['text']:
-        print("Autocoding")
-        if record["label"] == "CONSULT":
-            scr = "A"
-        else:
-            scr = "X"
-    else:       
-        scr = input("Evaluate--> ").upper()
+    scr = input("Evaluate--> ").upper()
     if scr == "":
         scr = defaultopt
     while scr not in "01234AXZDQ ":
@@ -162,6 +157,8 @@ while len(line) > 0:
     if "D" == scr or "4" == scr: 
         if defaultopt == "A":
             defaultopt = "X"
+        elif defaultopt == "X":
+            defaultopt = " "
         else:
             defaultopt = "A"
     else:
@@ -187,6 +184,7 @@ else:  # reached EOF
 fin.close()
 fout.close()
 with open(FILEREC_NAME,'a') as frec:
-    frec.write("{:s} {:d} {:s} {:d}\n".format(filename,nskip, timestamp, nacc + nrej + nign)) 
+    frec.write("{:s} {:d} {:s}".format(filename,nskip, timestamp)) 
+    frec.write( "   accept:{:3d}  reject:{:3d}  ignore:{:3d}  total:{:3d}".format(nacc, nrej, nign, nacc + nrej + nign))
 
 print("Finished")
