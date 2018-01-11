@@ -185,6 +185,6 @@ fin.close()
 fout.close()
 with open(FILEREC_NAME,'a') as frec:
     frec.write("{:s} {:d} {:s}".format(filename,nskip, timestamp)) 
-    frec.write( "   accept:{:3d}  reject:{:3d}  ignore:{:3d}  total:{:3d}".format(nacc, nrej, nign, nacc + nrej + nign))
+    frec.write( "   accept:{:3d}  reject:{:3d}  ignore:{:3d}  total:{:3d}\n".format(nacc, nrej, nign, nacc + nrej + nign))
 
 print("Finished")
