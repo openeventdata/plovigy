@@ -7,6 +7,8 @@ to program around this; a simple <return> can be treated as <accept> [default] o
 
 Input and output formats are the same as prodigy.
 
+See the README.md file at https://github.com/openeventdata/plovigy-mark for additional information
+
 TO RUN PROGRAM:
 
 python3 plovigy-mark.py <filename> <coder>
@@ -20,11 +22,17 @@ KEYS
 
 2/x        reject
 
-0/<space>  ignore
+0/<space>/`  ignore
 
-3/z        toggles the display of the "meta" information
+d        cycles <return> between accept/reject/ignore
 
-4/d        cycles <return> between accept/reject/ignore
+c        add comment to output record
+
+m        toggles the display of the "meta" information
+
+-        go back to previous record in buffer (limited by BUFFER_SIZE)
+
++        go forward past previously coded records without recoding
 
 q          quit 
 
@@ -35,10 +43,10 @@ PROGRAMMING NOTES:
 2. Output file names are coder- and time-stamped
 
 3. Input is not case-sensitive
+ 
 
 SYSTEM REQUIREMENTS
-This program has been successfully run under Mac OS 10.13.2; it is standard Python 3.5
-so it should also run in Unix or Windows. 
+This program has been successfully run under Mac OS 10.13.2; it is standard Python 3.5 so it should also run in Unix or Windows. 
 
 PROVENANCE:
 Programmer: Philip A. Schrodt
@@ -60,6 +68,7 @@ Report bugs to: schrodt735@gmail.com
 REVISION HISTORY:
 15-Dec-17:	Initial version
 04-Jan-18:	Default switching option
+23-Jan-18:	Buffered output; comment option
 
 =========================================================================================================
 """
@@ -71,12 +80,15 @@ import os
 
 FILEREC_NAME = "plovigy.filerecs.txt"
 
-defaultopt = "A"
+BUFFER_SIZE = 8  
+
+defaultopt = "A"  # default option (that is, annotation coded with a simple <return>)
+buffer = []       # LIFO buffer holding previously coded records
 
 if len(sys.argv) > 1:
     filename = sys.argv[1]
 else:  
-    filename = "verify_reutlev171229_4.jsonl"  
+    filename = "verify_reutlev171229_4.jsonl"  # debug
         
 if len(sys.argv) >= 3:
     coder = sys.argv[2]
@@ -109,58 +121,89 @@ if nskip == 0:
     line = fin.readline() 
 else:
     print("Skipping first", nskip,"records in",filename)            
-    for ka in range(nskip + 1):
+    for ka in range(nskip):
         line = fin.readline() 
 
-firstrec = nskip
-lastrec = None
+ka = 0
+nacc, nrej, nign = 0,0,0  # counters for three annotations
+show_meta = False
+go_back   = False # currently reading from buffer
+new_line  = True  # read new line from input rather than buffer or processing a comment
+fout = open("plovigy-eval." + timestamp,'w')
 answ = input("Press return to start...")
 
-fout = open("plovigy-eval." + timestamp,'w')
-ka = 0
-nacc, nrej, nign = 0,0,0
-show_meta = False
 while len(line) > 0:  
-    record = json.loads(line[:-1])
-#    print(record)
+    if go_back:
+        line = buffer[buffer_loc][0] + " "
+        record = json.loads(line[:-1])
+        if buffer_loc == len(buffer) - 1:
+            go_back = False
+    else:
+        if new_line:
+            buffer.append([line[:-1],""])
+            new_line = False
+            record = json.loads(line[:-1])
     print(chr(27) + "[2J")
 
     if defaultopt == "A":
-        print("a/1/DEFAULT: accept  x/2: reject  space/0: ignore   z/3: toggle meta  d/4: toggle default  q: quit\n")
+        print("a/1/DEFAULT: accept   x/2: reject   space/0/`: ignore   q: quit")
     elif defaultopt == "X":
-        print("a/1: accept  x/2/DEFAULT: reject  space/0: ignore   z/3: toggle meta  d/4: toggle default  q: quit\n")
+        print("a/1: accept   x/2/DEFAULT: reject   space/0/`: ignore   q: quit")
     else:
-        print("a/1: accept  x/2: reject  space/0/DEFAULT: ignore   z/3: toggle meta  d/4: toggle default  q: quit\n")
+        print("a/1: accept   x/2: reject   space/0/`/DEFAULT: ignore   q: quit")
+    print("d: toggle default   c: add comment   m: toggle meta   -: back", end="")
+    if go_back:
+        if buffer_loc > 0:
+            print("   +: forward   Queue loc:", buffer_loc - len(buffer) + 1, end="")
+        else:
+            print("   +: forward   Queue loc: END OF BUFFER", end="")
+    print("\n\n")
     for ln in textwrap.wrap(record['text'],80):
         print(ln) 
     print("\n\x1B[34m{:20s}\x1B[00m".format(record["label"]),end="")
     print( "                                 accept:{:3d}  reject:{:3d}  ignore:{:3d}  total:{:3d}".format(nacc, nrej, nign, nacc + nrej + nign))
     if show_meta:
-        if "pattern" in record["meta"]:
-            print("\npattern: " + record["meta"]["pattern"] + "   coding: " + record["meta"]["coding"] )
-            print("coder: " + record["meta"]["coder"] + "   class: " + record["meta"]["class"] )
-            print("text ID: " + record["meta"]["textid"])
-        else:
-            print("\nclass: " + record["meta"]["class"])
+        print("\npattern: " + record["meta"].get("pattern","---") + "   coding: " + record["meta"].get("coding","---") )
+        print("coder: " + record["meta"].get("coder","---") + "   class: " + record["meta"].get("class","---") )
+        print("text ID: " + record["meta"].get("textid","---"))
     
     print()
+    """if go_back:  # debug
+        for li in buffer:
+            idx = li[0].find('"text":')
+            print(li[0][idx + 8: idx + 40])"""
+
     scr = input("Evaluate--> ").upper()
+
     if scr == "":
         scr = defaultopt
-    while scr not in "01234AXZDQ ":
+    while scr not in "012AXMDCQ`-+= ":
         print("Unrecognized option '" + scr + "'. Try again")
         scr = input("Evaluate--> ").upper()
     if "Q" == scr:
         break
-    if "Z" == scr or "3" == scr: 
+    if "M" == scr: 
         show_meta = not show_meta
-    if "D" == scr or "4" == scr: 
+    elif "D" == scr: 
         if defaultopt == "A":
             defaultopt = "X"
         elif defaultopt == "X":
             defaultopt = " "
         else:
             defaultopt = "A"
+    elif "C" == scr: 
+        record["meta"]["comment"] = input("Enter comment--> ")
+        if go_back:
+            buffer[buffer_loc][0] = json.dumps(record, sort_keys = True)
+    elif "-" == scr:
+        buffer_loc -= 1 
+        if go_back:
+            if buffer_loc < 0:
+                buffer_loc = 0 
+        else:
+            go_back = True
+    elif "+" == scr or "=" == scr:
+        buffer_loc += 1
     else:
         record["_input_hash"] = 0
         record["_task_hash"] = 0
@@ -170,21 +213,36 @@ while len(line) > 0:
         if "X" == scr or "2" == scr:
             record["answer"] = "reject"
             nrej += 1
-        if " " == scr or "0" == scr:
+        if " " == scr or "0" == scr or "`" == scr:
             record["answer"] = "ignore"
             nign += 1
-        nskip += 1
-        line = fin.readline() 
-        fout.write(json.dumps(record, sort_keys = True) + "\n")
-else:  # reached EOF
+        if go_back:
+            buffer[buffer_loc][1] = json.dumps(record, sort_keys = True)
+            buffer_loc += 1
+        else: 
+            buffer[-1][1] = json.dumps(record, sort_keys = True)
+            if len(buffer) > BUFFER_SIZE:
+                fout.write(buffer.pop(0)[1] + "\n")
+                nskip += 1
+            buffer_loc = len(buffer)
+            """for li in buffer:   # debug
+                idx = li[0].find('"text":')
+                print(li[0][idx + 8: idx + 40])
+#            sxr = input("continue--> ").upper()"""
+            new_line  = True
+            line = fin.readline()
+else:
     print("All records have been coded")
-    lastrec = nskip
-#    nskip = -1
 
 fin.close()
+
+while buffer:
+    fout.write(buffer.pop(0)[1]  + "\n")
+    nskip += 1
 fout.close()
+
 with open(FILEREC_NAME,'a') as frec:
-    frec.write("{:s} {:d} {:s}".format(filename,nskip, timestamp)) 
+    frec.write("{:s} {:d} {:s}".format(filename,nskip-1, timestamp)) 
     frec.write( "   accept:{:3d}  reject:{:3d}  ignore:{:3d}  total:{:3d}\n".format(nacc, nrej, nign, nacc + nrej + nign))
 
 print("Finished")
