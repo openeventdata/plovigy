@@ -25,7 +25,7 @@ a | accept
 1 | accept
 x | reject
 2 | reject
-space | ignore
+space | ignore (useful if entering ' ', a, x from lower left of keyboard)
 \` | ignore (useful if entering \`, 1, 2 from top row of keyboard)
 0 |  ignore (useful if entering 0, 1, 2 from numerical keypad)
 return | accept, reject, or ignore depending on setting 
@@ -44,7 +44,7 @@ At present, key commands except for the default `return` must be followed by `re
 
 2. Input is not case-sensitive. 
 
-3. Cases are saved in a temporary buffer before being written: this currently holds 8 entries (probably beyond the capacity of your working memory) but can be changed using the global BUFFER_SIZE. This can be navigated using the +/- keys; to change the value using the accept/reject/ignore options.
+3. Cases are saved in a temporary buffer before being written: this currently holds 8 entries (probably beyond the capacity of your working memory) but can be changed using the global BUFFER_SIZE. This can be navigated using the +/- keys; to change the annonated "answer" value use the accept/reject/ignore options.
 
 4. A comment ('C' key) needs to be added *before* adding the annotation.
 
