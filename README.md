@@ -71,8 +71,8 @@ Implementations for Data Intensive Research in the Social Behavioral and Economi
 project: Modernizing Political Event Data for Big Data Social Science Research (Award 1539302; 
 PI: Patrick Brandt, University of Texas at Dallas)
 
-This program has been successfully run under Mac OS 10.13.2; it is standard Python 3.5
-so it should also run in Unix or Windows. 
+This program has been successfully run under Mac OS 10.13.2 and Ubuntu 16.04; it is standard Python 3.5
+and so also should run in Windows. Not that I can see any reason you'd want to run Windows.
 
 This code is covered under the MIT license: http://opensource.org/licenses/MIT
 
