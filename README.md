@@ -17,7 +17,7 @@ python3 plovigy-mark.py verify_test0105_02.jsonl PAS
 
 Output file will have a name of the format `plovigy-eval.PAS-180105-171558.txt`
 
-## Key commands -- I'm updating the docs before uploading the new program, so be patient...just gotta trap a couple off-by-one bugs
+## Key commands
 
 | key | effect |
 :---: | ---
