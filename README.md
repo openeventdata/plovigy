@@ -17,17 +17,24 @@ python3 plovigy-mark.py verify_test0105_02.jsonl PAS
 
 Output file will have a name of the format `plovigy-eval.PAS-180105-171558.txt`
 
-## Key commands
+## Key commands -- I'm updating the docs before uploading the new program, so be patient...just gotta trap a couple off-by-one bugs
 
-| key | key  | effect |
-:---: | :---: | ---
-0 | space | ignore
-1 | a | accept
-2 |x | reject
-3 |z | toggles the display of the "meta" information
-4 |d | toggle <return> between accept/reject/ignore (default is "accept")
-` ` |return | accept, reject, or ignore depending on setting 
-` ` |q | quit 
+| key | effect |
+:---: | ---
+a | accept
+1 | accept
+x | reject
+2 | reject
+space | ignore
+\` | ignore (useful if entering \`, 1, 2 from top row of keyboard)
+0 |  ignore (useful if entering 0, 1, 2 from numerical keypad)
+return | accept, reject, or ignore depending on setting 
+c | add "comment" to "meta" in output record: program prompts for text
+d | toggle <return> between accept/reject/ignore (initial value is "accept")
+m | toggle  display of the "meta" information
+\- | go back one record in buffer
+\+ | go forward one record in buffer without recoding
+q | quit 
 
 At present, key commands except for the default `return` must be followed by `return`.
 
@@ -35,11 +42,15 @@ At present, key commands except for the default `return` must be followed by `re
 
 1. Toggling the `return` option substantially increases the speed at which one can annotate in situations where one hits a sequence of cases which are either usually right, usually wrong or usually irrelevant.
 
-2. Input is not case-sensitive 
+2. Input is not case-sensitive. 
 
-3. The file FILEREC_NAME -- currently set to "plovigy.filerecs.txt" -- keeps track of the location in the file, so if you quit and restart, you will be returned to the last uncoded record in the file.
+3. Cases are saved in a temporary buffer before being written: this currently holds 8 entries (probably beyond the capacity of your working memory) but can be changed using the global BUFFER_SIZE. This can be navigated using the +/- keys; to change the value using the accept/reject/ignore options.
 
-4. The file *plover_reference.html* is a reference to the PLOVER ontology and has some suggestions for doing annotation; it can be opened in a browser or from [this link](http://eventdata.parusanalytics.com/data.dir/plover_reference.html).
+4. A comment ('C' key) needs to be added *before* adding the annotation.
+
+5. The file FILEREC_NAME -- currently set to "plovigy.filerecs.txt" -- keeps track of the location in the file, so if you quit and restart, you will be returned to the last uncoded record in the file.
+
+6. The file *plover_reference.html* is a reference to the PLOVER ontology and has some suggestions for doing annotation; it can be opened in a browser or from [this link](http://eventdata.parusanalytics.com/data.dir/plover_reference.html).
 
 5. *plovigy_testfile_0105.jsonl* is set up for annotating the primary PLOVER event but, with different data preparation, this could be -- and in the future will be -- changed so that the program can be used for the annotation of the source or target actors, or the PLOVER mode or context of the event. We have a set of programs which extract the most frequently-used patterns for the [PETRARCH-1](https://github.com/openeventdata/petrarch2) and [PETRARCH-2](https://github.com/openeventdata/petrarch) programs (see [this presentation](http://eventdata.parusanalytics.com/presentations.dir/Schrodt.RIDIR.PETRARCH.slides.pdf)) and then convert these to the `prodigy/plovigy` format, but at the moment these are fairly ad hoc: still, if you might find them useful, contact schrodt735@gmail.com. 
 
@@ -49,11 +60,9 @@ This program was developed to do simple annotation -- that is, simply determinin
 
 ## Programming Notes
 
-1. There are obviously work-arounds -- see StackOverflow -- that would allow the program to respond immediately to any key, without the `return`, though so far I haven't found this sufficiently irritating to bother including that feature.
+1. There are obviously work-arounds -- see StackOverflow -- that would allow the program to respond immediately to any key, without the `return`, though so far I haven't found this sufficiently irritating to bother including that feature: in fact having to use two keys before doing anything except annotating with the default seems useful.
 
-2. Unlike `prodigy`, the program currently does not have the ability to go backwards: saving the results to a buffer rather than immediately writing them to a file would also be a very straightforward feature to add. 
-
-3. I'm guessing in the appropriate Python framework, it would be easy to get this running on a smart phone: again, it's really lightweight. This is left as an exercise.
+2. I'm guessing in the appropriate Python framework, it would be easy to get this running on a smart phone: again, it's really lightweight. This is left as an exercise.
 
 
 ## Acknowledgments
