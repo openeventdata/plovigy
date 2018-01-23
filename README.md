@@ -46,7 +46,7 @@ At present, key commands except for the default `return` must be followed by `re
 
 3. Cases are saved in a temporary buffer before being written: this currently holds 8 entries (probably beyond the capacity of your working memory) but can be changed using the global BUFFER_SIZE. This can be navigated using the +/- keys; to change the annonated "answer" value use the accept/reject/ignore options.
 
-4. A comment ('C' key) needs to be added *before* adding the annotation.
+4. In the normal forward flow, a comment ('C' key) needs to be added *before* adding the annotation since after an annotation is added, the program moves to the next record. Comments can be added by going backwards in the buffer.
 
 5. The file FILEREC_NAME -- currently set to "plovigy.filerecs.txt" -- keeps track of the location in the file, so if you quit and restart, you will be returned to the last uncoded record in the file.
 
