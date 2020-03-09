@@ -1,7 +1,9 @@
 # plovigy-mark
 A lightweight program that duplicates the basic functionality of the "mark" function in the [prodigy](http://prodi.gy/) system using the same input and output formats; output is saved to a file which is coder- and time-stamped rather than to a database.
 
-_*Note March-2020*_: Somehow I'd missed the existance of the Python `curses` library when writing this, and that would
+### Note March-2020: 
+
+Somehow I'd missed the existance of the Python `curses` library when writing this, and that would
 be a much better way to implement it, as well as removing the need for the constant use of `return`
 
 ## To run program:
