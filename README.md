@@ -89,12 +89,14 @@ Report bugs to: schrodt735@gmail.com
 
 ## plovigy-PITF-DEDI.py
 
-A subset of plovigy-mark.py which uses the PITF-DEDI jsonl format and just does simple accept/reject classification without
-any other options. This also does quite a bit of autocoding: see the sample files `autocodes-DEDI.txt` and `autocodes-202212-DEDI.txt`. Requires `utilDEDI.py` 
+A subset of `plovigy-mark.py` which uses the PITF-DEDI jsonl format—see the file `plovigy-DEDI-input-sample.jsonl` for a sample of the input—and mostly does simple accept/reject classification without
+any other options, though it does allow dates to be moved forward and back. This also does quite a bit of autocoding: see the sample files `autocodes-DEDI.txt` and `autocodes-202212-DEDI.txt`. Requires `utilDEDI.py` 
 
 DEDI is an internal PITF data set on protests which is derived from the government version of the ICEWS event data. `plovigy-PITF-DEDI.py` is just one piece of an extended pipeline used in this production but has been *extensively* used for several years and I've got more documentation for the program if that would be helpful.
 
-##
+## plovigy-PITF-annotate.py
+
+Radical simplification of `plovigy-PITF-DEDI.py` to work with the PITF PLOVER/NGEC human annotations. The more complex `actor-annot-lite` replaces this for annotation purposes, but this forms the basis for the later `plovigy-NGEC` programs.
 
 # November 2022
 
@@ -102,5 +104,5 @@ DEDI is an internal PITF data set on protests which is derived from the governme
 plovigy for selecting cases either from the Release data (.json suffix) or from the cases selected by assess_context.py(.txt suffix). Writes to the training-case format: see internal commenting for additional details
 
 ## plovigy-NGEC-review.py/.documentation.pdf
-plovigy for additional annotating of event training cases and documentation for same.
+plovigy for additional annotating of event training cases and documentation for same. 
 
