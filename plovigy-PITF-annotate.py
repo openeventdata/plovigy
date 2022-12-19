@@ -1,12 +1,11 @@
 """
-plovigy-PITF-Protest.py
+plovigy-PITF-annotate.py
 
-A subset of plovigy-mark.py which uses the PITF-PROT jsonl format and just does simple accept/reject classification without
-any other options. 
+Radical simplification of plovigy-PITF-DEDI.py to work with the PITF PLOVER/NGEC human annotations.
 
 TO RUN PROGRAM:
 
-python3 plovigy-PITF-Protest.py <filename> <coder>
+python3 plovigy-PITF-annotate.py <filename> <coder>
 
 where the optional <filename> is the file to read with a hard-coded default; <coder> is optional coder initials
 
@@ -15,8 +14,6 @@ KEYS
 1/a/<space>   accept
 
 3/0/x/        reject
-
-r or t        write previous/previous - 1 ID to filerecs on exit
 
 q             quit 
 
