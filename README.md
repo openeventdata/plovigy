@@ -85,6 +85,17 @@ This code is covered under the MIT license: http://opensource.org/licenses/MIT
 
 Report bugs to: schrodt735@gmail.com
 
+# plovigy-PITF
+
+## plovigy-PITF-DEDI.py
+
+A subset of plovigy-mark.py which uses the PITF-DEDI jsonl format and just does simple accept/reject classification without
+any other options. This also does quite a bit of autocoding: see the sample files `autocodes-DEDI.txt` and `autocodes-202212-DEDI.txt`. Requires `utilDEDI.py` 
+
+DEDI is an internal PITF data set on protests which is derived from the government version of the ICEWS event data. `plovigy-PITF-DEDI.py` is just one piece of an extended pipeline used in this production but has been *extensively* used for several years and I've got more documentation for the program if that would be helpful.
+
+##
+
 # November 2022
 
 ## plovigy-NGEC-context.py
