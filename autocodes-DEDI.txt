@@ -1,0 +1,365 @@
+{"ccode": "AFG", "targetstr": "ceasefire", "demands":  ["Protest against violence, for peace"]}
+{"ccode": "AFG", "targetstr": "insecurity", "demands":  ["Inadequate police response"]}
+{"ccode": "AUS", "targetstr": "Adani", "demands":  ["Environment"], "continuation": "True", "case": "True"}
+{"ccode": "AUS", "targetstr": "aborigin", "demands":  ["Ethnic"]}
+{"ccode": "AUT", "targetstr": "pegida", "demands":   ["Oppose immigration and refugees", "Right-wing", "Oppose religion"]}
+{"ccode": "BGD", "targetstr": "Rampal", "demands": ["Environment"], "case": "True", "comment": "power plant in BGD"}
+{"ccode": "CHL", "targetstr": "Mapuche", "demands":  ["Ethnic", "Support of arrested/killed person"], "case": "True"}
+{"ccode": "DEU", "targetstr": "pegida", "demands":   ["Oppose immigration and refugees", "Right-wing", "Oppose religion"]}
+{"ccode": "DZA", "targetstr": "hirak", "demands":   ["Demand current government step down", "Left-wing"], "continuation": "True"}
+{"ccode": "DZA", "targetstr": "shale gas", "demands":   ["Environment"], "continuation": "True"}
+
+{"ccode": "IND", "targetstr": "Cauvery", "demands":  ["Land tenure"], "case": "True", "comment": "Disputed river"}
+{"ccode": "IND", "targetstr": "Mahadayi", "demands":  ["Land tenure"], "case": "True", "comment": "Disputed river"}
+{"ccode": "IND", "targetstr": " demonstrated against * arrest ", "demands":  ["Support of arrested/killed person"]}
+{"ccode": "IND", "targetstr": "Rampal", "demands": ["Support of arrested/killed person", "Religion"], "case": "True", "comment": "convicted religious leader in IND"}
+{"ccode": "IND", "targetstr": "ex?servicemen", "demands": ["Government benefits"]}
+{"ccode": "IND", "targetstr": " kin ", "demands":  [ "Inadequate police response"]}
+{"ccode": "IND", "targetstr": " relatives ", "demands":  ["Inadequate police response"]}
+{"ccode": "IND", "targetstr": "regulariz", "demands": ["Unemployment"]}
+{"ccode": "IND", "targetstr": "note ban", "demands":  ["Oppose new or proposed law", "Economic other"], "continuation": "True"}
+{"ccode": "IND", "targetstr": "demonetisation", "demands":  ["Oppose new or proposed law", "Economic other"], "continuation": "True"}
+{"ccode": "IND", "targetstr": "demonetization", "demands":   ["Oppose new or proposed law", "Economic other"], "continuation": "True"}
+{"ccode": "IND", "targetstr": "NEET", "demands":  ["Oppose new or proposed law", "Education"], "case": "True"}
+{"ccode": "IND", "targetstr": "NEXT", "demands":  ["Oppose new or proposed law", "Education"], "case": "True", "comment": "Is this specifically for health?"}
+{"ccode": "IND", "targetstr": "inner line permit", "demands":  ["Judicial/legal system"], "comment": "Add immigration here as well: that seems to be the issue"}
+{"ccode": "IND", "targetstr": "ILP", "demands":  ["Judicial/legal system"], "case": "True"}
+{"ccode": "IND", "targetstr": "Jat ", "demands":  ["Ethnic"], "case": "True"}
+{"ccode": "IND", "targetstr": "Jats ", "demands":  ["Ethnic"], "case": "True"}
+{"ccode": "IND", "targetstr": " caste", "demands":  ["Ethnic"]}
+{"ccode": "IND", "targetstr": "quota ", "demands":  ["Ethnic"]}
+{"ccode": "IND", "targetstr": "quotas ", "demands":  ["Ethnic"]}
+{"ccode": "IND", "targetstr": "SCs", "demands":  ["Ethnic"], "case": "True"}
+{"ccode": "IND", "targetstr": "STs", "demands":  ["Ethnic"], "case": "True"}
+{"ccode": "IND", "targetstr": "SC ", "demands":  ["Ethnic"], "case": "True", "comment": "Sometimes does false positive on Supreme Court"}
+{"ccode": "IND", "targetstr": " ST ", "demands":  ["Ethnic"], "case": "True"}
+{"ccode": "IND", "targetstr": "scheduled tribe", "demands":  ["Ethnic"]}
+{"ccode": "IND", "targetstr": " reservation", "demands":  ["Ethnic"]}
+{"ccode": "IND", "targetstr": "Dalit", "demands": ["Ethnic"], "case": "True"}
+{"ccode": "IND", "targetstr": " tipu ", "demands":  ["Interparty", "Oppose historical anniversary"], "comment": "See codebook: this is an 18C anti-British Muslim nationalist Congress likes and BJP doesn't"}
+{"ccode": "IND", "targetstr": "pro?freedom", "demands":  ["Demand independence", "Anti-government general"], "continuation": "True", "comment": "Phrase in the Jammu and Kashmir script..."}
+{"ccode": "IND", "targetstr": "sand mafia", "demands": ["Environment"]}
+{"ccode": "IND", "targetstr": "sand min", "demands": ["Environment"]}
+{"ccode": "IND", "targetstr": "sand quarr", "demands": ["Environment"]}
+{"ccode": "IND", "targetstr": "teachers", "demands": ["Education", "Labor/wage dispute"]}
+{"ccode": "IND", "targetstr": "anganwadi", "demands": ["Education", "Labor/wage dispute"]}
+{"ccode": "IND", "targetstr": "text?books", "demands": ["Education"]}
+{"ccode": "IND", "targetstr": "examination", "demands": ["Education"]}
+{"ccode": "IND", "targetstr": "passing marks", "demands": ["Education"]}
+{"ccode": "IND", "targetstr": " paddy ", "demands": ["Labor/wage dispute", "Government benefits"]}
+{"ccode": "IND", "targetstr": "hostel", "demands": ["Education", "Government benefits"]}
+{"ccode": "IND", "targetstr": " effig", "demands": ["Interparty", "Demand resignation of official"], "comment": "the many variations of burning in effigy"}
+{"ccode": "IND", "targetstr": "National Herald", "demands":  ["Interparty", "Political/economic corruption"], "case": "True", "comment": "very long-running case against Congress leaders"}
+{"ccode": "IND", "targetstr": "raised slogans against", "demands": ["Interparty", "Demand resignation of official"]}
+{"ccode": "IND", "targetstr": "anti?people", "demands": ["Interparty", "Anti-government general"]}
+{"ccode": "IND", "targetstr": "activists", "demands": ["Interparty"]}
+{"ccode": "IND", "targetstr": " cadres", "demands": ["Interparty"]}
+{"ccode": "IND", "targetstr": " list ", "demands": ["Interparty"]}
+{"ccode": "IND", "targetstr": " list,", "demands": ["Interparty"]}
+{"ccode": "IND", "targetstr": "party workers", "demands":  ["Interparty"]}
+{"ccode": "IND", "targetstr": "Congress workers", "demands":  ["Interparty"], "case": "True"}
+{"ccode": "IND", "targetstr": "Cong. workers", "demands":  ["Interparty"], "case": "True"}
+{"ccode": "IND", "targetstr": "Cong workers", "demands":  ["Interparty"], "case": "True"}
+{"ccode": "IND", "targetstr": "BJP workers", "demands":  ["Interparty"], "case": "True"}
+{"ccode": "IND", "targetstr": "liquor", "demands": ["Social other"]}
+{"ccode": "IND", "targetstr": "tasmac", "demands": ["Social other"]}
+{"ccode": "IND", "targetstr": "jallikattu", "demands":  ["Social other"]}
+{"ccode": "IND", "targetstr": "bull?taming", "demands":  ["Social other"]}
+{"ccode": "IND", "targetstr": "Guru Granth Sahib", "demands":  ["Religion", "Ethnic"], "case": "True"}
+{"ccode": "IND", "targetstr": "statue", "demands":  ["Political other"], "case": "True"}
+
+{"ccode": "JPN", "targetstr": "Okinawa", "demands": ["Actions of other government", "International policy", "Land tenure"], "continuation": "True", "case": "True", "comment": "This is the situation more often than not"}
+{"ccode": "KOR", "targetstr": "thaad", "demands": ["Actions of other government", "International policy", "Land tenure"], "continuation": "True", "comment": "Missile base"}
+{"ccode": "KOR", "targetstr": "anti?missile", "demands": ["Actions of other government", "International policy", "Land tenure"], "continuation": "True", "comment": "Missile base"}
+{"ccode": "KOR", "targetstr": "comfort women", "demands":  ["Actions of other government", "Gender issues", "Historical anniversary"]}
+{"ccode": "LKA", "targetstr": "Tamil", "demands": ["Ethnic"], "case": "True"}
+{"ccode": "NGA", "targetstr": "zakzaky", "demands":  ["Religion", "Support of arrested/killed person"], "comment": "Imprisoned Shia leader"}
+{"ccode": "NGA", "targetstr": "Biafra", "demands":  ["Ethnic", "Demand independence"], "case": "True"}
+{"ccode": "PAK", "targetstr": "blasphemy", "demands":  ["Religion"]}
+{"ccode": "PAK", "targetstr": "lady health workers", "demands":  ["Health", "Labor/wage dispute"]}
+{"ccode": "PHL", "targetstr": "comfort women", "demands":  ["Actions of other government", "Gender issues", "Historical anniversary"]}
+{"ccode": "PSE", "targetstr": "Israel" , "demands": ["Actions of other government"], "continuation": "True", "case": "True", "comment": "typically the Gaza border protests"}
+{"ccode": "PSE", "targetstr": "IDF " , "demands": ["Actions of other government"], "continuation": "True", "case": "True", "comment": "typically the Gaza border protests"}
+{"ccode": "TWN", "targetstr": "comfort women", "demands":  ["Actions of other government", "Gender issues", "Historical anniversary"]}
+--------
+{"ccode": "IRN", "keyseq": "=1", "demands": ["Political/economic corruption","Demand current government step down", "Services", "Economic other", "Unemployment"], "continuation": "True", "comment": "IRN/IRAQ suite"}
+{"ccode": "IRQ", "keyseq": "=1", "demands": ["Political/economic corruption","Demand current government step down", "Services", "Economic other", "Unemployment"], "continuation": "True", "comment": "IRN/IRAQ suite"}
+{"ccode": "LBN", "keyseq": "=1", "demands": ["Political/economic corruption","Demand current government step down", "Economic other"], "continuation": "True", "comment": "LBN suite"}
+--------
+{"ccode": "ALL", "targetstr": "early election", "demands": ["Demand election"]}
+
+{"ccode": "ALL", "targetstr": "tribal", "demands": ["Ethnic"]}
+{"ccode": "ALL", "targetstr": "indigenous", "demands": ["Ethnic"]}
+
+{"ccode": "ALL", "targetstr": "exam ", "demands": ["Education"]}
+{"ccode": "ALL", "targetstr": "exams ", "demands": ["Education"]}
+{"ccode": "ALL", "targetstr": "postponed exam", "demands": ["Education"]}
+{"ccode": "ALL", "targetstr": "teacher", "demands": ["Education"]}
+{"ccode": "ALL", "targetstr": "teaching staff", "demands": ["Education"]}
+{"ccode": "ALL", "targetstr": "instructor", "demands": ["Education"]}
+{"ccode": "ALL", "targetstr": "lecturer", "demands": ["Education"]}
+{"ccode": "ALL", "targetstr": "curriculum", "demands": ["Education"]}
+
+{"ccode": "ALL", "targetstr": "doctor", "demands": ["Health"]}
+{"ccode": "ALL", "targetstr": "hospital staff", "demands": ["Health"]}
+{"ccode": "ALL", "targetstr": "health care workers", "demands": ["Health"]}
+{"ccode": "ALL", "targetstr": "medical staff", "demands": ["Health"]}
+{"ccode": "ALL", "targetstr": "nurse", "demands": ["Health"]}
+{"ccode": "ALL", "targetstr": "patient", "demands": ["Health", "Support of arrested/killed person"], "comment": "the context most of the time"}
+
+{"ccode": "ALL", "targetstr": "temple", "demands": ["Religion"]}
+{"ccode": "ALL", "targetstr": "church", "demands": ["Religion"]}
+{"ccode": "ALL", "targetstr": "mosque", "demands": ["Religion"]}
+
+{"ccode": "ALL", "targetstr": "climate", "demands": ["Environment"]}
+{"ccode": "ALL", "targetstr": "Thunberg", "demands": ["Environment"], "case": "True"}
+{"ccode": "ALL", "targetstr": "Greenpeace", "demands": ["Environment"], "case": "True"}
+{"ccode": "ALL", "targetstr": "Green Party", "demands": ["Environment"], "case": "True"}
+{"ccode": "ALL", "targetstr": "Extinction Rebellion", "demands": ["Environment"], "case": "True"}
+{"ccode": "ALL", "targetstr": "environmental", "demands": ["Environment"]}
+{"ccode": "ALL", "targetstr": "ecolog", "demands": ["Environment"]}
+{"ccode": "ALL", "targetstr": "pollution", "demands": ["Environment"]}
+{"ccode": "ALL", "targetstr": "trees ", "demands": ["Environment"]}
+{"ccode": "ALL", "targetstr": "air quality", "demands": ["Environment"]}
+{"ccode": "ALL", "targetstr": "anti?nuclear", "demands": ["Environment"]}
+{"ccode": "ALL", "targetstr": "nuclear reactor", "demands": ["Environment"]}
+{"ccode": "ALL", "targetstr": "nuclear power", "demands": ["Environment"]}
+{"ccode": "ALL", "targetstr": " dam ", "demands": ["Environment"]}
+{"ccode": "ALL", "targetstr": "fracking", "demands": ["Environment"]}
+
+{"ccode": "ALL", "targetstr": "electricity", "demands": ["Services"]}
+{"ccode": "ALL", "targetstr": "electric power", "demands": ["Services"]}
+{"ccode": "ALL", "targetstr": "electrical power", "demands": ["Services"]}
+{"ccode": "ALL", "targetstr": "power supply", "demands": ["Services"]}
+{"ccode": "ALL", "targetstr": "power outage", "demands": ["Services"]}
+{"ccode": "ALL", "targetstr": "power cut", "demands": ["Services"]}
+{"ccode": "ALL", "targetstr": "bad road", "demands": ["Services"]}
+{"ccode": "ALL", "targetstr": "load?shedding", "demands": ["Services"]}
+{"ccode": "ALL", "targetstr": "sanitation", "demands": ["Services"]}
+{"ccode": "ALL", "targetstr": "sewerage", "demands": ["Services"]}
+{"ccode": "ALL", "targetstr": "infrastructure", "demands": ["Services"]}
+{"ccode": "ALL", "targetstr": "drinking water", "demands": ["Services"]}
+{"ccode": "ALL", "targetstr": "clean water", "demands": ["Services"]}
+{"ccode": "ALL", "targetstr": "dirty water", "demands": ["Services"]}
+{"ccode": "ALL", "targetstr": "water supply", "demands": ["Services"]}
+{"ccode": "ALL", "targetstr": "train service", "demands": ["Services"]}
+{"ccode": "ALL", "targetstr": "pothole", "demands": ["Services"]}
+{"ccode": "ALL", "targetstr": "pothole", "demands": ["Services"]}
+{"ccode": "ALL", "targetstr": "flyover", "demands": ["Services"]}
+{"ccode": "ALL", "targetstr": "road work", "demands": ["Services"]}
+#{"ccode": "ALL", "targetstr": "highway", "demands": ["Services"]} confused with blocking highways
+{"ccode": "ALL", "targetstr": " services", "demands": ["Services"]}
+{"ccode": "ALL", "targetstr": "toll", "demands": ["Services", "Price/tax increase"]}
+
+{"ccode": "ALL", "targetstr": "unemployment", "demands": ["Unemployment"]}
+{"ccode": "ALL", "targetstr": "unemployed", "demands": ["Unemployment"]}
+{"ccode": "ALL", "targetstr": "jobless", "demands": ["Unemployment"]}
+{"ccode": "ALL", "targetstr": "layoffs", "demands": ["Unemployment"]}
+{"ccode": "ALL", "targetstr": "laid off", "demands": ["Unemployment"]}
+{"ccode": "ALL", "targetstr": "demand* jobs", "demands": ["Unemployment"]}
+
+{"ccode": "ALL", "targetstr": "better pay", "demands": ["Labor/wage dispute"]}
+{"ccode": "ALL", "targetstr": "go* on strike", "demands": ["Labor/wage dispute"]}
+{"ccode": "ALL", "targetstr": "went on strike", "demands": ["Labor/wage dispute"]}
+{"ccode": "ALL", "targetstr": "hold* a strike", "demands": ["Labor/wage dispute"]}
+{"ccode": "ALL", "targetstr": "indefinite strike", "demands": ["Labor/wage dispute"]}
+{"ccode": "ALL", "targetstr": "not been paid", "demands": ["Labor/wage dispute"]}
+{"ccode": "ALL", "targetstr": "unpaid", "demands": ["Labor/wage dispute"]}
+{"ccode": "ALL", "targetstr": " salar", "demands": ["Labor/wage dispute"]}
+{"ccode": "ALL", "targetstr": "non-payment", "demands": ["Labor/wage dispute"]}
+{"ccode": "ALL", "targetstr": "workers", "demands": ["Labor/wage dispute"]}
+{"ccode": "ALL", "targetstr": "employees", "demands": ["Labor/wage dispute"]}
+
+{"ccode": "ALL", "targetstr": "corrupt", "demands": ["Political/economic corruption"]}
+{"ccode": "ALL", "targetstr": "bribery", "demands": ["Political/economic corruption"]}
+{"ccode": "ALL", "targetstr": "anti-graft", "demands": ["Political/economic corruption"]}
+{"ccode": "ALL", "targetstr": " graft", "demands": ["Political/economic corruption"]}
+{"ccode": "ALL", "targetstr": " scam", "demands": ["Political/economic corruption"]}
+{"ccode": "ALL", "targetstr": " extortion", "demands": ["Political/economic corruption"]}
+
+{"ccode": "ALL", "targetstr": "gender*based violence", "demands": ["Inadequate police response", "Gender issues"]}
+{"ccode": "ALL", "targetstr": "violence against women", "demands": ["Inadequate police response", "Gender issues"]}
+{"ccode": "ALL", "targetstr": "crimes against women", "demands": ["Inadequate police response", "Gender issues"]}
+{"ccode": "ALL", "targetstr": "rape* ", "demands": ["Inadequate police response", "Gender issues"]}
+{"ccode": "ALL", "targetstr": "domestic violence", "demands": ["Inadequate police response", "Gender issues"]}
+{"ccode": "ALL", "targetstr": "femicide", "demands": ["Inadequate police response", "Gender issues"]}
+
+{"ccode": "ALL", "targetstr": "anti-LGB", "demands": ["Oppose gender issues"], "case": "True"}
+{"ccode": "ALL", "targetstr": "gay marriage", "demands": ["Gender issues"]}
+{"ccode": "ALL", "targetstr": "same?sex marriage", "demands": ["Gender issues"]}
+{"ccode": "ALL", "targetstr": "pride march", "demands": ["Gender issues"]}
+{"ccode": "ALL", "targetstr": "pride parade", "demands": ["Gender issues"]}
+
+{"ccode": "ALL", "targetstr": "police inaction", "demands": ["Inadequate police response"]}
+{"ccode": "ALL", "targetstr": "demand* the arrest", "demands": ["Inadequate police response"]}
+
+{"ccode": "ALL", "targetstr": "migrant", "demands": ["Immigration and refugees"]}
+{"ccode": "ALL", "targetstr": "refugee", "demands": ["Immigration and refugees"]}
+{"ccode": "ALL", "targetstr": " asylum", "demands": ["Immigration and refugees"]}
+
+{"ccode": "ALL", "targetstr": "increase in $t", "demands":  ["Price/tax increase"]}
+{"ccode": "ALL", "targetstr": "rise in $t", "demands":  ["Price/tax increase"]}
+{"ccode": "ALL", "targetstr": "soaring $t", "demands":  ["Price/tax increase"]}
+{"ccode": "ALL", "targetstr": "$t increase", "demands":  ["Price/tax increase"]}
+{"ccode": "ALL", "targetstr": "$t hike", "demands":  ["Price/tax increase"]}
+{"ccode": "ALL", "targetstr": "$t rise", "demands":  ["Price/tax increase"]}
+{"ccode": "ALL", "targetstr": "inflation", "demands":  ["Price/tax increase"]}
+{"ccode": "ALL", "targetstr": "rising prices", "demands":  ["Price/tax increase"]}
+{"ccode": "ALL", "targetstr": "cost of living", "demands":  ["Price/tax increase"]}
+
+{"ccode": "ALL", "targetstr": "economic situation", "demands":  ["Economic other"]}
+
+{"ccode": "ALL", "targetstr": " gambling", "demands": ["Social other"]}
+{"ccode": "ALL", "targetstr": "Valentine", "demands": ["Social other"], "case": "True"}
+{"ccode": "ALL", "targetstr": "disabled", "demands": ["Social other"]}
+{"ccode": "ALL", "targetstr": "disabilities", "demands": ["Social other"]}
+{"ccode": "ALL", "targetstr": " blind", "demands": ["Social other"]}
+{"ccode": "ALL", "targetstr": "differently abled", "demands": ["Social other"]}
+{"ccode": "ALL", "targetstr": "animal rights", "demands": ["Social other"]}
+{"ccode": "ALL", "targetstr": "anti?abortion", "demands": ["Social other"]}
+{"ccode": "ALL", "targetstr": " film ", "demands": ["Social other"]}
+{"ccode": "ALL", "targetstr": " movie ", "demands": ["Social other"]}
+
+{"ccode": "ALL", "targetstr": "demand impeach", "demands": ["Demand resignation of official"]}
+{"ccode": "ALL", "targetstr": "demand removal", "demands": ["Demand resignation of official"]}
+{"ccode": "ALL", "targetstr": "demand dismissal", "demands": ["Demand resignation of official"]}
+{"ccode": "ALL", "targetstr": "resignation", "demands": ["Demand resignation of official"]}
+{"ccode": "ALL", "targetstr": "step* down", "demands": ["Demand resignation of official"]}
+
+{"ccode": "ALL", "targetstr": "separatist", "demands": ["Demand independence"]}
+{"ccode": "ALL", "targetstr": "pro?independence", "demands": ["Demand independence"]}
+
+{"ccode": "ALL", "targetstr": "anti*government", "demands": ["Anti-government general"]}
+{"ccode": "ALL", "targetstr": "anti*regime", "demands": ["Anti-government general"]}
+{"ccode": "ALL", "targetstr": "against *government", "demands": ["Anti-government general"]}
+{"ccode": "ALL", "targetstr": "against *regime", "demands": ["Anti-government general"]}
+{"ccode": "ALL", "targetstr": "opposition rally", "demands": ["Anti-government general"]}
+{"ccode": "ALL", "targetstr": "opposition rallied", "demands": ["Anti-government general"]}
+
+#{"ccode": "ALL", "targetstr": "pro?government", "demands": ["Pro-government loyalists"]}
+{"ccode": "ALL", "targetstr": "government supporters", "demands": ["Pro-government loyalists"]}
+
+{"ccode": "ALL", "targetstr": "new law", "demands": ["Oppose new or proposed law"]}
+{"ccode": "ALL", "targetstr": "new bill", "demands": ["Oppose new or proposed law"]}
+{"ccode": "ALL", "targetstr": "new legislation", "demands": ["Oppose new or proposed law"]}
+{"ccode": "ALL", "targetstr": "proposed legislation", "demands": ["Oppose new or proposed law"]}
+
+{"ccode": "ALL", "targetstr": " pension", "demands": ["Government benefits"]}
+{"ccode": "ALL", "targetstr": "retired employees", "demands": ["Government benefits"]}
+
+{"ccode": "ALL", "targetstr": " embassy", "demands": ["Actions of other government"]}
+{"ccode": "ALL", "targetstr": " consulate", "demands": ["Actions of other government"]}
+{"ccode": "ALL", "targetstr": "Kurds", "demands": ["Actions of other government", "Support of arrested/killed person"], "case": "True", "comment": "Mostly gets protests in other countries, and mostly about Ocalan"}
+{"ccode": "ALL", "targetstr": "Kurdish", "demands": ["Actions of other government", "Support of arrested/killed person"], "case": "True"}
+
+{"ccode": "ALL", "targetstr": "protested *arrest", "demands":  ["Support of arrested/killed person"]}
+{"ccode": "ALL", "targetstr": "against the *arrest", "demands": ["Support of arrested/killed person"]}
+{"ccode": "ALL", "targetstr": "demand *release", "demands": ["Support of arrested/killed person"]}
+{"ccode": "ALL", "targetstr": "demanding *release", "demands": ["Support of arrested/killed person"]}
+{"ccode": "ALL", "targetstr": "political prisoners", "demands": ["Support of arrested/killed person"]}
+{"ccode": "ALL", "targetstr": "call for the release", "demands": ["Support of arrested/killed person"], "comment": "these will occasionally give false positives on the likes of release of water, funds"}
+{"ccode": "ALL", "targetstr": "call* for the release", "demands": ["Support of arrested/killed person"]}
+{"ccode": "ALL", "targetstr": "protest* the death", "demands": ["Support of arrested/killed person"]}
+
+{"ccode": "ALL", "targetstr": "housing", "demands": ["Land tenure"]}
+{"ccode": "ALL", "targetstr": " evict", "demands": ["Land tenure"]}
+{"ccode": "ALL", "targetstr": "development project", "demands": ["Land tenure"]}
+{"ccode": "ALL", "targetstr": "demolition", "demands": ["Land tenure"]}
+{"ccode": "ALL", "targetstr": " demolish", "demands": ["Land tenure"]}
+{"ccode": "ALL", "targetstr": " razed", "demands": ["Land tenure"]}
+{"ccode": "ALL", "targetstr": "illegal building", "demands": ["Land tenure"]}
+{"ccode": "ALL", "targetstr": "property rights", "demands": ["Land tenure"]}
+{"ccode": "ALL", "targetstr": "land dispute", "demands": ["Land tenure"]}
+{"ccode": "ALL", "targetstr": "land protest", "demands": ["Land tenure"]}
+{"ccode": "ALL", "targetstr": "land acquisition", "demands": ["Land tenure"]}
+{"ccode": "ALL", "targetstr": "land ordinance", "demands": ["Land tenure"]}
+{"ccode": "ALL", "targetstr": "encroachment", "demands": ["Land tenure"]}
+{"ccode": "ALL", "targetstr": "title deed", "demands": ["Land tenure"]}
+{"ccode": "ALL", "targetstr": "home?buyers", "demands": ["Land tenure", "Corporate"]}
+{"ccode": "ALL", "targetstr": "land grab", "demands": ["Land tenure", "Political/economic corruption"]}
+
+{"ccode": "ALL", "targetstr": "Uber", "demands": ["Corporate", "Anti-globalization"], "case": "True"}
+{"ccode": "ALL", "targetstr": "G7", "demands": [ "Anti-globalization"], "case": "True"}
+{"ccode": "ALL", "targetstr": "anti?globalization", "demands": ["Anti-globalization"]}
+
+{"ccode": "ALL", "targetstr": "anniversary", "demands": ["Historical anniversary"]}
+
+--------
+-- SELECTION ONLY
+{"ccode": "ALL", "targetstr": "hundreds of people", "demands":  []}
+{"ccode": "ALL", "targetstr": "thousands of people", "demands":  []}
+{"ccode": "ALL", "targetstr": "protestors", "demands":  []}
+{"ccode": "ALL", "targetstr": "protesters", "demands":  []}
+{"ccode": "ALL", "targetstr": "demonstrators", "demands":  []}
+{"ccode": "ALL", "targetstr": "demonstraters", "demands":  []}
+{"ccode": "ALL", "targetstr": "the $d", "demands":  []}
+{"ccode": "ALL", "targetstr": "peaceful $p", "demands":  []}
+{"ccode": "ALL", "targetstr": "peaceful $d", "demands":  []}
+{"ccode": "ALL", "targetstr": " stage* $d", "demands":  []}
+{"ccode": "ALL", "targetstr": " held a $d", "demands": []}
+{"ccode": "ALL", "targetstr": " continued their $d", "demands": []}
+{"ccode": "ALL", "targetstr": " hold* a $d", "demands": []}
+{"ccode": "ALL", "targetstr": " to $d against", "demands": []}
+{"ccode": "ALL", "targetstr": " a $d by ", "demands": []}
+{"ccode": "ALL", "targetstr": " $e outside", "demands":  []}
+{"ccode": "ALL", "targetstr": " $e in front of", "demands":  []}
+{"ccode": "ALL", "targetstr": " $e against", "demands":  []}
+{"ccode": "ALL", "targetstr": " $e at ", "demands":  []}
+{"ccode": "ALL", "targetstr": " $e in ", "demands":  []}
+{"ccode": "ALL", "targetstr": " took to the street", "demands":  []}
+{"ccode": "ALL", "targetstr": "protest rall", "demands":  []}
+
+{"ccode": "ALL", "targetstr": " archives", "demands":  [], "reject": "True"}
+{"ccode": "ALL", "targetstr": " archive ", "demands":  [], "reject": "True"}
+{"ccode": "ALL", "targetstr": "election rally", "demands":  [], "reject": "True"}
+{"ccode": "ALL", "targetstr": "resign* in protest", "demands":  [], "reject": "True"}
+{"ccode": "ALL", "targetstr": "dissolved *parliament", "demands":  [], "reject": "True"}
+{"ccode": "ALL", "targetstr": "dissolved *government", "demands":  [], "reject": "True"}
+{"ccode": "ALL", "targetstr": "dissolved *board", "demands":  [], "reject": "True"}
+
+{"ccode": "IND", "targetstr": "led *walkout", "demands":  [], "reject": "True"}
+{"ccode": "IND", "targetstr": "stage* a walkout", "demands":  [], "reject": "True"}
+{"ccode": "IND", "targetstr": "stage* a walk-out", "demands":  [], "reject": "True"}
+{"ccode": "IND", "targetstr": "trooped into *well", "demands":  [], "reject": "True"}
+{"ccode": "IND", "targetstr": "well of the house", "demands":  [], "reject": "True"}
+{"ccode": "IND", "targetstr": "poll rally", "demands":  [], "reject": "True"}
+
+{"ccode": "PAK", "targetstr": "led *walkout", "demands":  [], "reject": "True"}
+{"ccode": "PAK", "targetstr": "stage* a walkout", "demands":  [], "reject": "True"}
+{"ccode": "PAK", "targetstr": "stage* a walk-out", "demands":  [], "reject": "True"}
+{"ccode": "PAK", "targetstr": "trooped into *well", "demands":  [], "reject": "True"}
+{"ccode": "PAK", "targetstr": "well of the house", "demands":  [], "reject": "True"}
+{"ccode": "PAK", "targetstr": "poll rally", "demands":  [], "reject": "True"}
+{"ccode": "PAK", "targetstr": "Congress", "demands":  [], "case": "True", "reject": "True"}
+{"ccode": "PAK", "targetstr": "Cong ", "demands":  [], "case": "True", "reject": "True"}
+{"ccode": "PAK", "targetstr": "BJP", "demands":  [], "case": "True", "reject": "True"}
+{"ccode": "PAK", "targetstr": "dalit", "demands":  [], "reject": "True"}
+{"ccode": "PAK", "targetstr": "Shiv Sena", "demands":  [], "case": "True", "reject": "True"}
+{"ccode": "PAK", "targetstr": "AAP", "demands":  [], "case": "True", "reject": "True"}
+
+{"ccode": "BGD", "targetstr": "BJP", "demands":  [], "case": "True", "reject": "True"}
+{"ccode": "BGD", "targetstr": "Shiv Sena", "demands":  [], "case": "True", "reject": "True"}
+{"ccode": "BGD", "targetstr": "dalit", "demands":  [], "reject": "True"}
+{"ccode": "BGD", "targetstr": "AAP", "demands":  [], "case": "True", "reject": "True"}
+{"ccode": "BGD", "targetstr": "Congress", "demands":  [], "case": "True", "reject": "True"}
+{"ccode": "BGD", "targetstr": "Cong ", "demands":  [], "case": "True", "reject": "True"}
+
+{"ccode": "TUR", "targetstr": "BJP", "demands":  [], "case": "True", "reject": "True"}
+{"ccode": "TUR", "targetstr": "Shiv Sena", "demands":  [], "case": "True", "reject": "True"}
+
+{"ccode": "NPL", "targetstr": "BJP", "demands":  [], "case": "True", "reject": "True"}
+{"ccode": "NPL", "targetstr": "Shiv Sena", "demands":  [], "case": "True", "reject": "True"}
+
+#{"ccode": "ALL", "targetstr": "supply routes", "demands":  [], "reject": "True"}
+#{"ccode": "ALL", "targetstr": "supply routes", "demands":  []}
+--------
+-- STOP
+####outdated
+{"ccode": "HKG", "keyseq": "=1", "demands": ["Demand change in law", "Judicial/legal system"], "continuation": "True"}
+{"ccode": "FRA", "targetstr": "yellow" , "demands":["Price/tax increase", "Anti-globalization", "Economic other", "Demand current government step down"], "continuation": "True", "comment": "yellow-vest suite"}
+{"ccode": "FRA", "keyseq": "=1", "demands":["Price/tax increase", "Anti-globalization", "Economic other", "Demand current government step down"], "continuation": "True", "comment": "yellow-vest suite"}
+--------
+{"yrmon": "202010", "ccode": "ALL", "keyseq": "=5" , "demands":["Religion-Islam-France", "Actions of other government"], "continuation": "True", "comment": "cartoon-beheading suite"}
+{"yrmon": "202010", "ccode": "ALL", "targetstr": "Macron" , "demands":["Religion-Islam-France", "Actions of other government"], "continuation": "True", "case": "True", "comment": "cartoon-beheading suite"}
+{"ccode": "IND", "targetstr": "demonetisation", "demands":  []}
+{"ccode": "IND", "targetstr": "demonetization", "demands":  []}

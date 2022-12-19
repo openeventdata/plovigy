@@ -1,8 +1,8 @@
 """
-plovigy-PITF-Protest.py
+plovigy-PITF-DEDI.py
 
 A subset of plovigy-mark.py which uses the PITF-PROT jsonl format and just does simple accept/reject classification without
-any other options. 
+any other options; also does quite a bit of autocoding. 
 
 TO RUN PROGRAM:
 
@@ -15,6 +15,10 @@ KEYS
 1/a/<space>   accept
 
 3/0/x/        reject
+
+2/B           move date back one day
+
+5/F           move date back one day
 
 r or t        write previous/previous - 1 ID to filerecs on exit
 
@@ -292,7 +296,7 @@ def main(stdscr):
                 if "2" == keych or "B"  == keych:
                     record['date'], thedate = utilDEDI.newdate(record['date'])
                 else:
-                    record['date'], thedate = utilDEDI.newdate(record['date'], True)
+                    record['date'], thedate = utilDEDI.newdate(record['date'], True)  # 5/F are the only allowable keych options at this point
                 record['enddate'] = record['date']
                 modwin.addstr(INIT_Y, INIT_X, str(ka) + '  ' + record['country']  + 
                             ": " + record['date'] + " (" + dayOfWeek[thedate.weekday()] + ")")

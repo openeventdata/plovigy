@@ -1,0 +1,30 @@
+{"ccode": "IND", "targetstr": "agnipath", "demands": ["Unemployment", "Oppose new or proposed law", "Government benefits" ], "continuation": "True"}
+{"ccode": "ALL", "targetstr": "Ukrain", "demands": ["Actions of other government", "Protest against violence, for peace"], "case": "True", "continuation": "True"}
+{"ccode": "ALL", "targetstr": "Russia", "demands": ["Actions of other government", "Protest against violence, for peace"], "case": "True", "continuation": "True"}
+{"ccode": "ZAF", "targetstr": "Dudula", "demands": ["Oppose immigration and refugees"], "case": "True", "continuation": "True"}
+-- STOP
+####outdated
+{"ccode": "ALL", "targetstr": "Palestin", "demands": ["Actions of other government"], "case": "True"}
+{"ccode": "ALL", "targetstr": "Israel", "demands": ["Actions of other government"], "case": "True"}
+{"ccode": "IND", "targetstr": "farm bills", "demands": ["Oppose new or proposed law"], "continuation": "True"}
+{"ccode": "THA", "keyseq": "=5", "targetstr": "student", "demands": ["Demand resignation of official", "Anti-government general", "Demand change in law"], "continuation": "True"}
+{"ccode": "HKG", "keyseq": "=1", "demands": ["Demand change in law", "Judicial/legal system"], "continuation": "True"}
+{"ccode": "FRA", "targetstr": "yellow" , "demands":["Price/tax increase", "Anti-globalization", "Economic other", "Demand current government step down"], "continuation": "True", "comment": "yellow-vest suite"}
+{"ccode": "FRA", "keyseq": "=1", "demands":["Price/tax increase", "Anti-globalization", "Economic other", "Demand current government step down"], "continuation": "True", "comment": "yellow-vest suite"}
+{"ccode": "PAK", "targetstr": "Shakil-ur-Rahman", "demands":  ["Support of arrested/killed person"], "continuation": "True", "case": "True", "comment": "Dude was finally released...well, persistance pays off"}
+{"ccode": "NGA", "targetstr": "endsars", "demands": ["Police brutality"], "continuation": "True", "comment": "inconsistent capitalization on this"}
+{"ccode": "ISR", "targetstr": "Netanyahu", "demands": ["Demand resignation of official", "Political/economic corruption"], "continuation": "True", "case": "True"}
+{"ccode": "IND", "targetstr": "farmers", "demands": ["Oppose new or proposed law"], "continuation": "True"}
+{"ccode": "IND", "targetstr": "Lakhimpur" , "demands": ["Support of arrested/killed person", "Inadequate police response"], "continuation": "True", "case": "True"}
+{"ccode": "ALL", "keyseq": "=1", "demands": ["Quarantine", "Health"]}
+{"ccode": "ALL", "keyseq": "=2", "demands": ["Quarantine", "Immigration and refugees"]}
+{"ccode": "ALL", "keyseq": "=3", "demands": ["Quarantine", "Economic other"]}
+{"ccode": "ALL", "keyseq": "=4", "demands": ["Quarantine", "Unemployment"]}
+{"ccode": "ALL", "targetstr": "anti-mask", "demands": ["Quarantine"], "continuation": "True"}
+{"ccode": "ALL", "targetstr": "lockdown", "demands": ["Quarantine"], "continuation": "True"}
+{"ccode": "ALL", "targetstr": "coronavirus", "demands": ["Quarantine"], "continuation": "True"}
+{"ccode": "ALL", "targetstr": "covid", "demands": ["Quarantine"], "continuation": "True"}
+{"ccode": "ALL", "targetstr": "vaccination", "demands": ["Quarantine"], "continuation": "True"}
+{"ccode": "ALL", "targetstr": "anti-vaccine", "demands": ["Quarantine"], "continuation": "True"}
+{"ccode": "IND", "targetstr": "hijab", "demands": ["Gender issues",  "Education",  "Religion"], "continuation": "True"}
+{"ccode": "IND", "targetstr": "Gandhi", "demands": ["Support of arrested/killed person", "Interparty"],  "case": "True", "continuation": "True", "comment": "Rahul and Sonia are currently being investigated on corruption charges, and Congress is not happy"}
