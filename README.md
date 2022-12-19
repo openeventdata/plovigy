@@ -1,4 +1,6 @@
-# plovigy-mark
+These are a series of programs inspired by the basic functionality of the [prodigy](http://prodi.gy/) system modified to use keyboard entry and the terminal-based `curses` library. They have been used in various phases of the Political Instability Task Force New Generation Event Coder project (2021-2022) and the formats have gradually morphed away from `prodigy` but should be fairly easy to figure out/modify.
+
+## plovigy-mark
 A lightweight program that duplicates the basic functionality of the "mark" function in the [prodigy](http://prodi.gy/) system using the same input and output formats; output is saved to a file which is coder- and time-stamped rather than to a database.
 
 ### Note March-2020: 
@@ -82,4 +84,12 @@ and so also should run in Windows. Not that I can see any reason you'd want to r
 This code is covered under the MIT license: http://opensource.org/licenses/MIT
 
 Report bugs to: schrodt735@gmail.com
+
+# November 2022
+
+## plovigy-NGEC-context.py
+plovigy for selecting cases either from the Release data (.json suffix) or from the cases selected by assess_context.py(.txt suffix). Writes to the training-case format: see internal commenting for additional details
+
+## plovigy-NGEC-review.py/.documentation.pdf
+plovigy for additional annotating of event training cases and documentation for same.
 
