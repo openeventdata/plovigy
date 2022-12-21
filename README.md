@@ -97,6 +97,10 @@ DEDI is an internal PITF data set on protests which is derived from the governme
 ## plovigy-PITF-annotate.py
 
 Radical simplification of `plovigy-PITF-DEDI.py` to work with the PITF PLOVER/NGEC human annotations. The more complex `actor-annot-lite` replaces this for annotation purposes, but this forms the basis for the later `plovigy-NGEC` programs.
+  
+## actor-annot-lite.py/documentation
+  
+A Python program for annotating event files with sentence segmentation, actor, recipient, and location spans. It is designed to use minimal machine resources—in the Macintosh OS-X system—it takes about 6Mb of memory versus the 350Mb required for a single Google Chrome web page—and does not require connection to a server. The program is implemented using the C/Python `ncurses` terminal emulation and uses a small set of keyboard commands rather than a mouse, and is designed to run on a laptop. Like on an airplane.
 
 # November 2022
 
